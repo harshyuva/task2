@@ -1,0 +1,21 @@
+<%= form_for post do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+ 
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+ 
+  
+  <div class="field">
+    add an image....
+    <%= f.file_field :images, multiple: true %>
+  </div>
+
+  
+ 
+  <%= f.submit %>
+<% end %>
